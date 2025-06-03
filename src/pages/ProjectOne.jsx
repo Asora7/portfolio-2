@@ -19,7 +19,6 @@ export default function ProjectOne() {
       style={{ backgroundColor: 'var(--bg-card)', borderRadius: '0.5rem' }}
       role="main"
     >
-      {/* Back to Home */}
       <div className="d-flex justify-content-between align-items-center mb-4">
         <Link to="/" className="text-muted">
           ← Back to Home
@@ -35,10 +34,8 @@ export default function ProjectOne() {
         </button>
       </div>
 
-      {/* Title */}
       <h1 className="text-white mb-3">JavaScript Frameworks</h1>
 
-      {/* Figure */}
       <figure className="mb-4">
         <img
           src={projectImage}
@@ -51,7 +48,6 @@ export default function ProjectOne() {
         </figcaption>
       </figure>
 
-      {/* Live / GitHub buttons */}
       <div className="mb-5">
         <a
           href="https://your-live-site-url.com/js-frameworks"
@@ -73,7 +69,6 @@ export default function ProjectOne() {
         </a>
       </div>
 
-      {/* Overview Section */}
       <section className="mb-5">
         <h2 className="h4 text-white mb-2">Overview</h2>
         <p className="text-light">
@@ -85,7 +80,6 @@ export default function ProjectOne() {
         </p>
       </section>
 
-      {/* Self-Assessment / Improvements */}
       <section>
         <h2 className="h4 text-white mb-2">Self-Assessment & Improvements</h2>
         <ul className="list-unstyled text-light">

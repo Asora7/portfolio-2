@@ -1,9 +1,9 @@
 /* index.css */
 
-/* 1) Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-/* 2) CSS Variables */
+
 :root {
   --bg-dark: #121212;
   --bg-card: #1e1e1e;         /* slightly lighter than --bg-dark */
@@ -17,7 +17,7 @@
   --shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
-/* 3) Global Reset */
+
 *,
 *::before,
 *::after {
@@ -34,7 +34,7 @@ body {
   line-height: 1.6;
 }
 
-/* 4) Link Styles */
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -45,7 +45,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 5) Override Bootstrap utility classes if you used .bg-light / .text-dark */
+
 .bg-light {
   background-color: var(--bg-dark) !important;
 }
@@ -53,7 +53,7 @@ a:hover {
   color: var(--text-light) !important;
 }
 
-/* 6) Section‐Card Wrapper */
+
 .section-card {
   background-color: var(--bg-card);
   border-radius: var(--border-radius);
@@ -62,7 +62,7 @@ a:hover {
   padding: var(--section-padding);
 }
 
-/* 7) Hero Overrides (if you had .hero in HTML, but we styled inline) */
+
 .hero .display-4 {
   font-weight: 400;
   color: var(--text-light);
@@ -76,7 +76,7 @@ a:hover {
   margin: 1rem auto 0;
 }
 
-/* 8) Section Titles */
+
 .section-title {
   font-size: 1.75rem;
   font-weight: 600;
@@ -85,7 +85,7 @@ a:hover {
   text-align: center;
 }
 
-/* 9) About & Skills */
+
 .about-text {
   color: var(--text-light);
   max-width: 700px;
@@ -93,7 +93,7 @@ a:hover {
   line-height: 2;
 }
 
-/* Skill List (icon + text inline) */
+
 .skills-list {
   list-style: none;
   padding: 0;
@@ -106,7 +106,7 @@ a:hover {
   margin: 0.5rem 1rem;
   font-weight: 500;
   color: var(--text-light);
-  gap: 0.35rem; /* small gap between icon and text */
+  gap: 0.35rem; 
   font-size: 0.95rem;
 }
 .skills-list li:hover {
@@ -114,26 +114,25 @@ a:hover {
   cursor: default;
 }
 
-/* 10) Projects Section */
+
 #projects .section-title {
   margin-top: 0;
   margin-bottom: 2rem;
 }
 
-/* 11) Fade‐Up Animation */
-/* Initial state: invisible and shifted down */
+
 .fade-up {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease-out;
 }
-/* When .in-view is added, fade in and move up */
+
 .fade-up.in-view {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* 12) Footer */
+
 footer {
   background-color: var(--bg-card);
   color: var(--text-muted);

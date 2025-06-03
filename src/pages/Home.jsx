@@ -5,7 +5,7 @@ import ProjectCard from '../components/ProjectCard';
 import thumb1 from '../assets/project1-thumb.png';
 import thumb2 from '../assets/project2-thumb.png';
 import thumb3 from '../assets/project3-thumb.png';
-import myPhoto from '../assets/your-photo.jpg'; // your 135 KB headshot (e.g., IMG_6801-kopi.png)
+import myPhoto from '../assets/your-photo.jpg'; 
 
 import {
   FaJsSquare,
@@ -18,10 +18,7 @@ import {
 } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiFirebase } from 'react-icons/si';
 
-/** 
- * Custom hook to detect when an element scrolls into view.
- * (This toggles the “in-view” class on fade-up elements.)
- */
+
 function useInView(ref) {
   const [inView, setInView] = useState(false);
 
@@ -44,14 +41,14 @@ function useInView(ref) {
 }
 
 export default function Home() {
-  // Refs for each “card” you want to fade-up
+
   const heroRef = useRef();
   const aboutRef = useRef();
   const skillsRef = useRef();
   const projectsRef = useRef();
   const footerRef = useRef();
 
-  // Track when each section is in view
+
   const heroInView = useInView(heroRef);
   const aboutInView = useInView(aboutRef);
   const skillsInView = useInView(skillsRef);
@@ -60,16 +57,12 @@ export default function Home() {
 
   return (
     <>
-      {/*─────────────────────────────────────────────────────────────────────────*/}
-      {/* HERO SECTION (Two‐Column Layout) */}
-      {/*─────────────────────────────────────────────────────────────────────────*/}
       <section className="container py-5">
         <div
           ref={heroRef}
           className={`section-card fade-up ${heroInView ? 'in-view' : ''}`}
         >
           <div className="row align-items-center">
-            {/* Left Column: Headshot */}
             <div className="col-md-4 text-center mb-4 mb-md-0">
               <img
                 src={myPhoto}
@@ -84,14 +77,12 @@ export default function Home() {
               />
             </div>
 
-            {/* Right Column: Text */}
             <div className="col-md-8">
               <h1 className="display-4" style={{ color: 'var(--text-light)' }}>
                 Hi, I’m Veronica{' '}
                 Asora
               </h1>
 
-              {/* “I’m a” in white, “Front-end Developer” in blue */}
               <p
                 className="lead"
                 style={{
@@ -110,13 +101,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/*─────────────────────────────────────────────────────────────────────────*/}
-      {/* ABOUT & SKILLS (Side-by-Side on md+, Stacked on sm) */}
-      {/*─────────────────────────────────────────────────────────────────────────*/}
-      {/* In Home.jsx, wrap the .row with .align-items-stretch and add h-100 to each section-card */}
 <section className="container mb-5">
   <div className="row g-4 align-items-stretch">
-    {/* About Me Card */}
+
     <div className="col-md-6">
       <div
         ref={aboutRef}
@@ -133,7 +120,6 @@ export default function Home() {
       </div>
     </div>
 
-    {/* Skills & Technology Card */}
     <div className="col-md-6">
       <div
         ref={skillsRef}
@@ -175,9 +161,6 @@ export default function Home() {
 </section>
 
 
-      {/*─────────────────────────────────────────────────────────────────────────*/}
-      {/* PROJECTS (With a Larger “Recent Projects” Title) */}
-      {/*─────────────────────────────────────────────────────────────────────────*/}
       <section id="projects" className="container py-5">
         <div
           ref={projectsRef}
@@ -213,9 +196,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/*─────────────────────────────────────────────────────────────────────────*/}
-      {/* FOOTER / CONTACT */}
-      {/*─────────────────────────────────────────────────────────────────────────*/}
+
       <footer
         id="contact"
         ref={footerRef}
@@ -224,9 +205,9 @@ export default function Home() {
           backgroundColor: 'var(--bg-card)',
           borderRadius: 'var(--border-radius)',
           boxShadow: 'var(--shadow)',
-          padding: '1.5rem',            // adjust vertical/horizontal padding here
-          margin: '2rem auto 0',        // space above footer; auto‐center if needed
-          maxWidth: '1000px',           // or any width you prefer
+          padding: '1.5rem',            
+          margin: '2rem auto 0',        
+          maxWidth: '1000px',           
           color: 'var(--text-muted)',
           textAlign: 'center',
         }}
