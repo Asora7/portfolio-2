@@ -1,24 +1,152 @@
-/* src/index.css */
+/* index.css */
+
+/* 1) Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* 2) CSS Variables */
+:root {
+  --bg-dark: #121212;
+  --bg-card: #1e1e1e;         /* slightly lighter than --bg-dark */
+  --text-light: #ffffff;      /* pure white for high contrast */
+  --text-muted: #b0b0b0;      /* for subheadings, subtle text */
+  --accent: #00e5ff;          /* bright cyan-blue */
+  --accent-hover: rgba(0,229,255,0.8);
+
+  --section-padding: 1.25rem;
+  --border-radius: 0.5rem;
+  --shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* 3) Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212; /* very dark gray */
-  color: #e0e0e0;            /* light gray text */
+  background-color: var(--bg-dark);
+  color: var(--text-light);
   font-family: 'Inter', sans-serif;
+  line-height: 1.6;
 }
 
+/* 4) Link Styles */
 a {
-  color: #00e5ff;      /* bright accent for links */
+  color: var(--accent);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 a:hover {
+  color: var(--accent-hover);
   text-decoration: underline;
 }
 
-/* Optional: override Bootstrap’s default body/text */
+/* 5) Override Bootstrap utility classes if you used .bg-light / .text-dark */
 .bg-light {
-  background-color: #1a1a1a !important;
+  background-color: var(--bg-dark) !important;
 }
 .text-dark {
-  color: #e0e0e0 !important;
+  color: var(--text-light) !important;
+}
+
+/* 6) Section‐Card Wrapper */
+.section-card {
+  background-color: var(--bg-card);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--section-padding);
+  padding: var(--section-padding);
+}
+
+/* 7) Hero Overrides (if you had .hero in HTML, but we styled inline) */
+.hero .display-4 {
+  font-weight: 400;
+  color: var(--text-light);
+}
+.hero .lead {
+  color: var(--text-muted);
+}
+.hero .intro-text {
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 1rem auto 0;
+}
+
+/* 8) Section Titles */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* 9) About & Skills */
+.about-text {
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+/* Skill List (icon + text inline) */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin: 1rem 0 0;
+}
+.skills-list li {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.5rem 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  gap: 0.35rem; /* small gap between icon and text */
+  font-size: 0.95rem;
+}
+.skills-list li:hover {
+  color: var(--accent);
+  cursor: default;
+}
+
+/* 10) Projects Section */
+#projects .section-title {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* 11) Fade‐Up Animation */
+/* Initial state: invisible and shifted down */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+/* When .in-view is added, fade in and move up */
+.fade-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 12) Footer */
+footer {
+  background-color: var(--bg-card);
+  color: var(--text-muted);
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: var(--section-padding);
+}
+footer a {
+  margin: 0 0.5rem;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+footer a:hover {
+  color: var(--accent-hover);
 }
