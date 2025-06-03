@@ -1,0 +1,24 @@
+/* src/index.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* very dark gray */
+  color: #e0e0e0;            /* light gray text */
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: #00e5ff;      /* bright accent for links */
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: override Bootstrap’s default body/text */
+.bg-light {
+  background-color: #1a1a1a !important;
+}
+.text-dark {
+  color: #e0e0e0 !important;
+}
