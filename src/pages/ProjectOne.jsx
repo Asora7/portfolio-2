@@ -57,7 +57,7 @@ export default function ProjectOne() {
       {/* ── 3. Live Site & GitHub Repo Buttons ───────────────────────────── */}
       <div className="mb-5 d-flex justify-content-center gap-3">
         <a
-          href="https://urbannestecom.netlify.app/js-frameworks"
+          href="https://urbannestecom.netlify.app"
           target="_blank"
           rel="noreferrer"
           className="btn btn-accent"
@@ -66,7 +66,7 @@ export default function ProjectOne() {
           View Live Site
         </a>
         <a
-        href="https://github.com/Asora7/js-frameworks"
+        href="https://github.com/Asora7/course-assignment-ecom?tab=readme-ov-file"
         target="_blank"
         rel="noreferrer"
         className="btn btn-accent"  
