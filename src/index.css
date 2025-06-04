@@ -45,12 +45,24 @@ a:hover {
   text-decoration: underline;
 }
 
-
 .bg-light {
   background-color: var(--bg-dark) !important;
 }
 .text-dark {
   color: var(--text-light) !important;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--bg-dark);  /* black text on cyan background */
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+  color: var(--bg-dark);
 }
 
 
@@ -93,6 +105,10 @@ a:hover {
   line-height: 2;
 }
 
+.card-text {
+  color: rgba(255, 255, 255, 0.85); /* instead of 0.65 */
+}
+
 
 .skills-list {
   list-style: none;
@@ -118,6 +134,21 @@ a:hover {
 #projects .section-title {
   margin-top: 0;
   margin-bottom: 2rem;
+}
+
+.project-article-back-link {
+  color: var(--text-light);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.project-article-back-link:hover {
+  color: var(--accent-hover);
+}
+
+.text-light-muted {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 
