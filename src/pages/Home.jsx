@@ -113,7 +113,7 @@ export default function Home() {
         <p className="about-text">
   I spent my first two years of front‐end school writing HTML/CSS from scratch, and I’ve been hooked ever since.
   Today, I build responsive, accessible React applications using JavaScript, TypeScript, Bootstrap 5, and Tailwind.
-  I deploy every project to Netlify (or Vercel), manage code on GitHub, and always strive for pixel‐perfect design
+  I deploy every project to Netlify, manage code on GitHub, and always strive for pixel‐perfect design
   plus rock‐solid functionality.
 </p>
 
@@ -134,7 +134,7 @@ export default function Home() {
             <SiTypescript size={20} color="#3178C6" /> TypeScript
           </li>
           <li>
-            <FaReact size={20} color="#61DAFB" /> React (Hooks, Context)
+            <FaReact size={20} color="#61DAFB" /> React
           </li>
           <li>
             <FaBootstrap size={20} color="#7952B3" /> Bootstrap 5
