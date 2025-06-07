@@ -1,11 +1,9 @@
-// src/pages/ProjectTwo.jsx
 import React, { useState } from 'react';
 import { FiShare2 } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-
 import projectImage from '../assets/project2-large.png';
 
-function ProjectTwo() {
+export default function ProjectTwo() {
   const [copied, setCopied] = useState(false);
 
   function copyLink() {
@@ -15,91 +13,83 @@ function ProjectTwo() {
   }
 
   return (
-    <article className="container py-5 text-light">
-      <Link to="/" className="text-muted mb-3 d-inline-block">
-        &larr; Back to Home
-      </Link>
+    <main
+      className="container my-5 p-4"
+      style={{ backgroundColor: 'var(--bg-card)', borderRadius: '0.5rem' }}
+      role="main"
+    >
+      {/* ── Top Bar: Back + Share Button ─────────────────────────────────── */}
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        <Link to="/" className="text-light project-article-back-link">
+          ← Back to Home
+        </Link>
 
-      <h2 className="mb-3">Semester Project 2 (BidShare)</h2>
-      <button
-        onClick={copyLink}
-        className="btn btn-outline-light btn-sm mb-4"
-        title="Copy link to clipboard"
-      >
-        <FiShare2 className="me-1" />
-        {copied ? 'Link Copied!' : 'Share'}
-      </button>
+        <button
+          onClick={copyLink}
+          className="btn btn-outline-light btn-sm"
+          title="Copy link to clipboard"
+          aria-label="Copy page link"
+        >
+          <FiShare2 className="me-1" />
+          {copied ? 'Copied!' : 'Share'}
+        </button>
+      </div>
 
+      {/* ── 1. Project Title ──────────────────────────────────────────────── */}
+      <h1 className="text-white mb-3">
+        {/* TODO: Add Project Two Title */}
+      </h1>
+
+      {/* ── 2. Project Image & Caption ───────────────────────────────────── */}
       <figure className="mb-4">
         <img
           src={projectImage}
-          alt="Screenshot of Semester Project 2 (BidShare)"
+          alt="Screenshot of Project Two"
           className="img-fluid rounded"
           loading="lazy"
         />
-        <figcaption className="text-muted mt-2">
-          Screenshot of my improved Semester Project 2 (BidShare auction site).
+        <figcaption className="text-light-muted mt-2">
+          {/* TODO: Add image caption */}
         </figcaption>
       </figure>
 
-      <div className="mb-4">
+      {/* ── 3. Live Site & GitHub Repo Buttons ───────────────────────────── */}
+      <div className="mb-5 d-flex justify-content-center gap-3">
         <a
-          href="https://asora-auction-site.netlify.app/?classId=bbc516b1-3b66-40d2-beb1-b696fd0c5230&assignmentId=c181e851-cc93-4473-8eaf-98528a341b16&submissionId=2d501d00-87cb-4746-a675-67e2047475f4"
+          href="#"
           target="_blank"
           rel="noreferrer"
-          className="btn btn-info me-2"
+          className="btn btn-accent"
+          style={{ borderRadius: '0.25rem', minWidth: '120px' }}
         >
-          View Live Site
+          {/* TODO: Live Site Button Text */}
         </a>
         <a
-          href="https://github.com/Asora7/semester-project-2"
+          href="#"
           target="_blank"
           rel="noreferrer"
-          className="btn btn-outline-info"
+          className="btn btn-accent"
+          style={{ borderRadius: '0.25rem', minWidth: '120px' }}
         >
-          GitHub Repo
+          {/* TODO: GitHub Repo Button Text */}
         </a>
       </div>
 
+      {/* ── 4. Description ──────────────────────────────────────────────── */}
       <section className="mb-5">
-        <h3>Overview</h3>
-        <p>
-          Semester Project 2 (“BidShare”) is a React + Firebase–based auction platform where users can
-          browse listings, place bids, and manage their own auctions. For Portfolio 2, I revisited
-          this project to improve UX, accessibility, and code structure.
+        <h2 className="h4 text-white mb-3">Description</h2>
+        <p className="text-light">
+          {/* TODO: Add project description */}
         </p>
       </section>
 
+      {/* ── 5. Self-Assessment & Improvements ─────────────────────────────── */}
       <section>
-        <h3>Self-Assessment & Improvements</h3>
-        <ul>
-          <li>
-            <strong>Before:</strong> The original version lacked responsive behavior on mobile and did
-            not display clear “active” badges or bid history.
-          </li>
-          <li>
-            <strong>After:</strong> Added Bootstrap 5 grid/components to ensure a fully responsive
-            layout on both desktop and mobile breakpoints. Listings now stack gracefully and register
-            buttons resize correctly.
-          </li>
-          <li>
-            <strong>Accessibility:</strong> Implemented ARIA labels on form inputs and buttons,
-            ensured color contrast ratios exceed WCAG 2.1 AA standards, and added keyboard‐focus
-            outlines for all interactive elements.
-          </li>
-          <li>
-            <strong>Performance:</strong> Optimized all listing images via TinyPNG to be ≤ 200 KB and
-            installed React Lazy & Suspense to defer loading of non-critical components until
-            needed.
-          </li>
-          <li>
-            <strong>New Skill:</strong> Integrated Firebase Authentication (Email/Password) so users
-            can securely log in/register and their sessions persist across reloads.
-          </li>
+        <h2 className="h4 text-white mb-3">Self-Assessment & Improvements</h2>
+        <ul className="list-unstyled text-light">
+          {/* TODO: List key improvements and reflections */}
         </ul>
       </section>
-    </article>
+    </main>
   );
 }
-
-export default ProjectTwo;
