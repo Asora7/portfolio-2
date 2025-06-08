@@ -72,7 +72,7 @@ This is my second-year portfolio project built as part of the Noroff Frontend De
 
 3. **Exam Project 2 – Holidaze**  
    🏨 A booking web app for accommodation with login, role-based functionality (admin/customer), and date-based booking logic.  
-   🔗 [Live site](https://holidaze-asora.netlify.app) • [Repo](https://github.com/Asora7/holidaze-asora)
+   🔗 [Live site](https://holidaze-asora.netlify.app) • [Repo](https://github.com/Asora7/holidaze)
 
 ---
 
