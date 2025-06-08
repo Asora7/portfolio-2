@@ -84,7 +84,6 @@ Some examples of common improvements:
 - Replacing blocking `alert()`s with non-blocking Toastify messages
 - Adding loading spinners to pages that fetch data
 - Refactoring logic for better readability
-- Improving accessibility (contrast, alt text, keyboard nav)
 - Adding missing JSDoc comments
 
 ---
