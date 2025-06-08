@@ -78,7 +78,7 @@ This is my second-year portfolio project built as part of the Noroff Frontend De
 
 ## 📄 Reflection & Improvements
 
-Each article page includes a summary of what was originally missing, the improvements I made based on teacher feedback, and screenshots showing the changes.
+Each article page includes a summary of what was originally missing, the improvements I made based on teacher feedback.
 
 Some examples of common improvements:
 - Replacing blocking `alert()`s with non-blocking Toastify messages
