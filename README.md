@@ -1,4 +1,4 @@
-# 🎨 Portfolio 2 – Frontend Development
+#  Portfolio 2 – Frontend Development
 
 This is my second-year portfolio project built as part of the Noroff Frontend Development program. The site showcases three major projects using a new layout and upgraded skills including modern React with Vite, routing, and styling frameworks.
 
