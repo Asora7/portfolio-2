@@ -1,4 +1,10 @@
-// src/components/Footer.jsx
+/**
+ * Footer component for displaying contact information, copyright,
+ * and license details at the bottom of the page.
+ *
+ * @component
+ * @returns {JSX.Element} A styled footer with contact links.
+ */
 import React from 'react';
 
 export default function Footer() {

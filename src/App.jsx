@@ -4,11 +4,18 @@ import ProjectOne from './pages/ProjectOne';
 import ProjectTwo from './pages/ProjectTwo';
 import ProjectThree from './pages/ProjectThree';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer'; 
+import Footer from './components/Footer';
 
 import './App.css';
 import './index.css';
 
+/**
+ * Main application component containing route definitions
+ * and shared layout elements like Navbar and Footer.
+ *
+ * @component
+ * @returns {JSX.Element} Root component with routing and layout.
+ */
 function App() {
   return (
     <Router>
@@ -23,7 +30,7 @@ function App() {
         </Routes>
       </div>
 
-      <Footer /> 
+      <Footer />
     </Router>
   );
 }
