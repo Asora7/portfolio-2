@@ -11,6 +11,7 @@ This is my second-year portfolio project built as part of the Noroff Frontend De
 - **React 19** + **Vite 6**
 - **React Router DOM 7** for page navigation
 - **Bootstrap 5.3** for layout and responsive components
+- **Custom CSS** for additional styling and layout control
 - **PropTypes** for props validation
 - **Prettier** and **ESLint** for consistent code style
 - **Netlify** for deployment
