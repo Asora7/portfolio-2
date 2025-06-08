@@ -62,16 +62,16 @@ This is my second-year portfolio project built as part of the Noroff Frontend De
 
 ## 🧩 Featured Projects
 
-1. **JavaScript Frameworks CA**  
-   A React-based bidding site with user login and listing functionality  
-   🔗 [Live site](https://asora7-js-frameworks-ca.netlify.app) • [Repo](https://github.com/Asora7/js-frameworks-ca-asora)
+1. **JavaScript Frameworks CA – Urban Nest E-commerce**  
+   🛒 A React-based e-commerce app with category filtering, search, product detail pages, and cart functionality.  
+   🔗 [Live site](https://urbannestecom.netlify.app) • [Repo](https://github.com/Asora7/course-assignment-ecom)
 
-2. **Semester Project 2**  
-   A museum website with improved UX, accessibility, and layout  
-   🔗 [Live site](https://asora7-semester-project-2.netlify.app) • [Repo](https://github.com/Asora7/semester-project-2-asora)
+2. **Semester Project 2 – Auction Site**  
+   🏷️ A responsive auction listing platform with login, bidding, media uploads, and dynamic user profile pages.  
+   🔗 [Live site](https://asora-auction-site.netlify.app) • [Repo](https://github.com/Asora7/semester-project-2)
 
-3. **Exam Project 2: Holidaze**  
-   A full-featured accommodation booking site with admin and customer roles  
+3. **Exam Project 2 – Holidaze**  
+   🏨 A booking web app for accommodation with login, role-based functionality (admin/customer), and date-based booking logic.  
    🔗 [Live site](https://holidaze-asora.netlify.app) • [Repo](https://github.com/Asora7/holidaze-asora)
 
 ---
