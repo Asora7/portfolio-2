@@ -99,29 +99,55 @@ export default function Home() {
       <section className="container mb-5">
         <div className="row g-4 align-items-stretch">
           <div className="col-md-6">
-            <div ref={aboutRef} className={`section-card fade-up ${aboutInView ? 'in-view' : ''} h-100`}>
+            <div
+              ref={aboutRef}
+              className={`section-card fade-up ${aboutInView ? 'in-view' : ''} h-100`}
+            >
               <h2 className="section-title">About Me</h2>
               <p className="about-text">
-                I spent my first two years of front‐end school writing HTML/CSS from scratch, and I’ve been hooked ever since.
-                Today, I build responsive, accessible React applications using JavaScript, TypeScript, Bootstrap 5, and Tailwind.
-                I deploy every project to Netlify, manage code on GitHub, and always strive for pixel‐perfect design plus rock‐solid functionality.
+                I spent my first two years of front‐end school writing HTML/CSS from scratch, and
+                I’ve been hooked ever since. Today, I build responsive, accessible React
+                applications using JavaScript, TypeScript, Bootstrap 5, and Tailwind. I deploy every
+                project to Netlify, manage code on GitHub, and always strive for pixel‐perfect
+                design plus rock‐solid functionality.
               </p>
             </div>
           </div>
 
           <div className="col-md-6">
-            <div ref={skillsRef} className={`section-card fade-up ${skillsInView ? 'in-view' : ''} h-100`}>
+            <div
+              ref={skillsRef}
+              className={`section-card fade-up ${skillsInView ? 'in-view' : ''} h-100`}
+            >
               <h2 className="section-title">Skills &amp; Technology</h2>
               <ul className="skills-list">
-                <li><FaJsSquare size={20} color="#F7DF1E" /> JavaScript (ES6+)</li>
-                <li><SiTypescript size={20} color="#3178C6" /> TypeScript</li>
-                <li><FaReact size={20} color="#61DAFB" /> React</li>
-                <li><FaBootstrap size={20} color="#7952B3" /> Bootstrap 5</li>
-                <li><SiTailwindcss size={20} color="#38B2AC" /> Tailwind CSS</li>
-                <li><FaHtml5 size={20} color="#E34F26" /> HTML5</li>
-                <li><FaCss3Alt size={20} color="#1572B6" /> CSS3 (Flexbox, Grid)</li>
-                <li><FaGitAlt size={20} color="#F05032" /> Git &amp; GitHub</li>
-                <li><FaNpm size={20} color="#CB3837" /> Deployment (Netlify)</li>
+                <li>
+                  <FaJsSquare size={20} color="#F7DF1E" /> JavaScript (ES6+)
+                </li>
+                <li>
+                  <SiTypescript size={20} color="#3178C6" /> TypeScript
+                </li>
+                <li>
+                  <FaReact size={20} color="#61DAFB" /> React
+                </li>
+                <li>
+                  <FaBootstrap size={20} color="#7952B3" /> Bootstrap 5
+                </li>
+                <li>
+                  <SiTailwindcss size={20} color="#38B2AC" /> Tailwind CSS
+                </li>
+                <li>
+                  <FaHtml5 size={20} color="#E34F26" /> HTML5
+                </li>
+                <li>
+                  <FaCss3Alt size={20} color="#1572B6" /> CSS3 (Flexbox, Grid)
+                </li>
+                <li>
+                  <FaGitAlt size={20} color="#F05032" /> Git &amp; GitHub
+                </li>
+                <li>
+                  <FaNpm size={20} color="#CB3837" /> Deployment (Netlify)
+                </li>
               </ul>
             </div>
           </div>
@@ -129,7 +155,10 @@ export default function Home() {
       </section>
 
       <section id="projects" className="container py-5">
-        <div ref={projectsRef} className={`section-card fade-up ${projectsInView ? 'in-view' : ''}`}>
+        <div
+          ref={projectsRef}
+          className={`section-card fade-up ${projectsInView ? 'in-view' : ''}`}
+        >
           <h2 className="section-title text-center">Recent Projects</h2>
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div className="col">

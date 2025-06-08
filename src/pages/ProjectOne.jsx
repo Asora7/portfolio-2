@@ -82,26 +82,46 @@ export default function ProjectOne() {
         <h2 className="h4 text-white mb-3">Description</h2>
         <p className="text-light">
           This JavaScript Frameworks assignment is a React-based e-commerce demo. It fetches
-          products from the Noroff API (<code>v2.api.noroff.dev/online-shop</code>), renders
-          them in a responsive CSS Grid, and lets users search, view product details, add to
-          cart, and complete a checkout flow—all in one SPA.
+          products from the Noroff API (<code>v2.api.noroff.dev/online-shop</code>), renders them in
+          a responsive CSS Grid, and lets users search, view product details, add to cart, and
+          complete a checkout flow—all in one SPA.
         </p>
         <ul className="list-unstyled text-light">
-          <li><strong>Responsive Grid:</strong> CSS Grid auto-fills cards for various screen sizes.</li>
-          <li><strong>Data Fetching:</strong> Uses <code>useEffect</code> and <code>fetch</code> with error fallback.</li>
-          <li><strong>Live Search:</strong> Real-time product filtering.</li>
-          <li><strong>Global Cart:</strong> Managed via React Context API.</li>
-          <li><strong>Routing:</strong> Uses dynamic React Router routes.</li>
-          <li><strong>Form Validation:</strong> Inline errors and success confirmation on submit.</li>
+          <li>
+            <strong>Responsive Grid:</strong> CSS Grid auto-fills cards for various screen sizes.
+          </li>
+          <li>
+            <strong>Data Fetching:</strong> Uses <code>useEffect</code> and <code>fetch</code> with
+            error fallback.
+          </li>
+          <li>
+            <strong>Live Search:</strong> Real-time product filtering.
+          </li>
+          <li>
+            <strong>Global Cart:</strong> Managed via React Context API.
+          </li>
+          <li>
+            <strong>Routing:</strong> Uses dynamic React Router routes.
+          </li>
+          <li>
+            <strong>Form Validation:</strong> Inline errors and success confirmation on submit.
+          </li>
         </ul>
       </section>
 
       <section>
         <h2 className="h4 text-white mb-3">Self-Assessment & Improvements</h2>
         <ul className="list-unstyled text-light">
-          <li><strong>TypeScript Feedback:</strong> Acted on TS feedback by using it in Exam Project 2.</li>
-          <li><strong>Documentation:</strong> Added JSDoc comments across components.</li>
-          <li><strong>Clean Code:</strong> Removed leftover debug <code>console.log</code> statements.</li>
+          <li>
+            <strong>TypeScript Feedback:</strong> Acted on TS feedback by using it in Exam Project
+            2.
+          </li>
+          <li>
+            <strong>Documentation:</strong> Added JSDoc comments across components.
+          </li>
+          <li>
+            <strong>Clean Code:</strong> Removed leftover debug <code>console.log</code> statements.
+          </li>
         </ul>
       </section>
     </main>

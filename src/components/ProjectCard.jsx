@@ -18,10 +18,7 @@ function ProjectCard({ title, description, imageSrc, linkTo }) {
   return (
     <Link to={linkTo} className="text-decoration-none">
       <div className="project-card">
-        <div
-          className="project-card-image"
-          style={{ backgroundImage: `url(${imageSrc})` }}
-        >
+        <div className="project-card-image" style={{ backgroundImage: `url(${imageSrc})` }}>
           <div className="project-card-overlay">
             <span className="overlay-text">View Project →</span>
           </div>

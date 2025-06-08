@@ -1,76 +1,69 @@
 .project-card {
-    background-color: var(--bg-card);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
+  background-color: var(--bg-card);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
 
-  .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-  }
-  
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
 
-  .project-card-image {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    padding-top: 56.25%; 
-    transition: filter 0.3s ease;
-  }
-  
+.project-card-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 56.25%;
+  transition: filter 0.3s ease;
+}
 
-  .project-card-image:hover {
-    filter: brightness(0.75);
-  }
-  
+.project-card-image:hover {
+  filter: brightness(0.75);
+}
 
-  .project-card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.3s ease;
-  }
-  
+.project-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
 
-  .project-card-image:hover .project-card-overlay {
-    opacity: 1;
-  }
-  
+.project-card-image:hover .project-card-overlay {
+  opacity: 1;
+}
 
-  .overlay-text {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  
+.overlay-text {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+}
 
-  .project-card-body {
-    padding: 1rem;
-    text-align: center;
-  }
-  
+.project-card-body {
+  padding: 1rem;
+  text-align: center;
+}
 
-  .card-title {
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-    color: var(--text-light);
-  }
-  
+.card-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+}
 
-  .card-text {
-    font-size: 0.90rem;
-    line-height: 1.3;
-    color: rgba(255, 255, 255, 0.65); 
-    margin-top: 1rem;
-  }
-  
+.card-text {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 1rem;
+}

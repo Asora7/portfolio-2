@@ -81,18 +81,29 @@ export default function ProjectTwo() {
       <section className="mb-5">
         <h2 className="h4 text-white mb-3">Description</h2>
         <p className="text-light">
-          BidShare is a Vite-based auction platform powered by the Noroff Auction API. Users can browse
-          listings, register/login, create auctions, place bids, and view credits—with session persistence.
+          BidShare is a Vite-based auction platform powered by the Noroff Auction API. Users can
+          browse listings, register/login, create auctions, place bids, and view credits—with
+          session persistence.
         </p>
       </section>
 
       <section>
         <h2 className="h4 text-white mb-3">Self-Assessment & Improvements</h2>
         <ul className="list-unstyled text-light">
-          <li><strong>Loading States:</strong> Bootstrap spinner added while listings are fetched.</li>
-          <li><strong>UX Feedback:</strong> Replaced blocking <code>alert()</code> with Toastify toasts.</li>
-          <li><strong>Unit Testing:</strong> Added Vitest tests for core utility functions.</li>
-          <li><strong>Security Note:</strong> Security improvements (env vars, error handling) deferred post‑submission due to time.</li>
+          <li>
+            <strong>Loading States:</strong> Bootstrap spinner added while listings are fetched.
+          </li>
+          <li>
+            <strong>UX Feedback:</strong> Replaced blocking <code>alert()</code> with Toastify
+            toasts.
+          </li>
+          <li>
+            <strong>Unit Testing:</strong> Added Vitest tests for core utility functions.
+          </li>
+          <li>
+            <strong>Security Note:</strong> Security improvements (env vars, error handling)
+            deferred post‑submission due to time.
+          </li>
         </ul>
       </section>
     </main>

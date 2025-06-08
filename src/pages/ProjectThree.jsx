@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { FiShare2 } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
@@ -82,9 +81,10 @@ export default function ProjectThree() {
       <section className="mb-5">
         <h2 className="h4 text-white mb-3">Description</h2>
         <p className="text-light">
-          Holidaze is a React/TypeScript-based accommodation booking platform. Users can browse venues,
-          log in as Customers or Venue Managers, book available dates, manage bookings, and update listings.
-          It integrates with the Noroff API for full CRUD support and real-time feedback.
+          Holidaze is a React/TypeScript-based accommodation booking platform. Users can browse
+          venues, log in as Customers or Venue Managers, book available dates, manage bookings, and
+          update listings. It integrates with the Noroff API for full CRUD support and real-time
+          feedback.
         </p>
       </section>
 
