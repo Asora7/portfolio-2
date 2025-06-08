@@ -2,10 +2,9 @@
 import React, { useState } from 'react';
 import { FiShare2 } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-
 import projectImage from '../assets/project3-large.jpg';
 
-function ProjectThree() {
+export default function ProjectThree() {
   const [copied, setCopied] = useState(false);
 
   function copyLink() {
@@ -15,81 +14,98 @@ function ProjectThree() {
   }
 
   return (
-    <article className="container py-5 text-light">
-      <Link to="/" className="text-muted mb-3 d-inline-block">
-        &larr; Back to Home
-      </Link>
+    <main
+      className="container my-5 p-4"
+      style={{ backgroundColor: 'var(--bg-card)', borderRadius: '0.5rem' }}
+      role="main"
+    >
+      {/* ── Top Bar: Back + Share Button ─────────────────────────────────── */}
+      <div className="d-flex justify-content-between align-items-center mb-4">
+        <Link to="/" className="text-light project-article-back-link">
+          ← Back to Home
+        </Link>
 
-      <h2 className="mb-3">Exam Project 2 (E-Commerce Demo)</h2>
-      <button
-        onClick={copyLink}
-        className="btn btn-outline-light btn-sm mb-4"
-        title="Copy link to clipboard"
-      >
-        <FiShare2 className="me-1" />
-        {copied ? 'Link Copied!' : 'Share'}
-      </button>
+        <button
+          onClick={copyLink}
+          className="btn btn-outline-light btn-sm"
+          title="Copy link to clipboard"
+          aria-label="Copy page link"
+        >
+          <FiShare2 className="me-1" />
+          {copied ? 'Copied!' : 'Share'}
+        </button>
+      </div>
 
+      {/* ── 1. Project Title ──────────────────────────────────────────────── */}
+      <h1 className="text-white mb-3">Exam Project 2</h1>
+
+      {/* ── 2. Project Image & Caption ───────────────────────────────────── */}
       <figure className="mb-4">
         <img
           src={projectImage}
-          alt="Screenshot of Exam Project 2 (E-Commerce Demo)"
+          alt="Screenshot of Holidaze Accommodation Booking front-end"
           className="img-fluid rounded"
           loading="lazy"
         />
-        <figcaption className="text-muted mt-2">
-          Screenshot of the optimized E-Commerce demo from Exam Project 2.
+        <figcaption className="text-light-muted mt-2">
+          Screenshot of Holidaze Accommodation Booking application's responsive front-end.
         </figcaption>
       </figure>
 
-      <div className="mb-4">
+      {/* ── 3. Live Site & GitHub Repo Buttons ───────────────────────────── */}
+      <div className="mb-5 d-flex justify-content-center gap-3">
         <a
-          href="https://your-live-site-url.com/ecommerce-demo"
+          href="https://holidaze-asora.netlify.app"
           target="_blank"
           rel="noreferrer"
-          className="btn btn-info me-2"
+          className="btn btn-accent"
+          style={{ borderRadius: '0.25rem', minWidth: '120px' }}
         >
           View Live Site
         </a>
         <a
-          href="https://github.com/Asora7/exam-project-2"
+          href="https://github.com/Asora7/holidaze"
           target="_blank"
           rel="noreferrer"
-          className="btn btn-outline-info"
+          className="btn btn-accent"
+          style={{ borderRadius: '0.25rem', minWidth: '120px' }}
         >
           GitHub Repo
         </a>
       </div>
 
+      {/* ── 4. Description ──────────────────────────────────────────────── */}
       <section className="mb-5">
-        <h3>Overview</h3>
-        <p>
-          Exam Project 2 is an interactive E-Commerce demo where users can browse a catalog of products, add items to a shopping cart, and simulate a checkout flow. For Portfolio 2, I revisited this project to enhance performance, improve responsiveness, and modernize the codebase for better maintainability.
+        <h2 className="h4 text-white mb-3">Description</h2>
+        <p className="text-light">
+          Holidaze is a modern React-based accommodation booking platform. Users can browse venues, register and log in as either Customers or Venue Managers, update profile avatar, book available dates, manage their bookings, and venue managers can handle listings. Built using React, TypeScript, and Bootstrap, it integrates seamlessly with the Noroff API for real-time data interaction.
         </p>
       </section>
 
+      {/* ── 5. Self-Assessment & Improvements ─────────────────────────────── */}
       <section>
-        <h3>Self-Assessment & Improvements</h3>
-        <ul>
-          <li>
-            <strong>Before:</strong> The original demo was built with plain JavaScript and had no responsive design; images and scripts loaded synchronously, causing slow initial load times.
+        <h2 className="h4 text-white mb-3">Self‑Assessment & Improvements</h2>
+        <ul className="list-unstyled text-light">
+          <li className="mb-2">
+            Implemented comprehensive React Context for efficient global state management, eliminating <code>prop‑drilling</code>.
           </li>
-          <li>
-            <strong>After:</strong> Refactored the entire codebase to React, leveraging code splitting and React Lazy/Suspense to defer non-critical components. Converted CSS to a mobile-first layout using CSS Grid and Flexbox for a fully responsive design on all screen sizes.
+          <li className="mb-2">
+            Ensured responsive and accessible design, validated with <strong>Lighthouse</strong> and <strong>WAVE</strong> tools to meet WCAG standards.
           </li>
-          <li>
-            <strong>Accessibility:</strong> Added semantic HTML elements (e.g., <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, form labels), ensured all interactive elements are keyboard-navigable, and provided descriptive <code>alt</code> text for product images. Verified color contrast ratios meet WCAG 2.1 AA standards.
+          <li className="mb-2">
+            Identified logo display issues in Safari (works in Chrome & Firefox); planning to fix this post‑evaluation by adjusting CSS/image formats for Safari compatibility.
           </li>
-          <li>
-            <strong>Performance:</strong> Compressed product images to ≤ 200 KB using TinyPNG, implemented <code>loading="lazy"</code> on all images, and used React memoization (<code>React.memo</code>) to prevent unnecessary re-renders. Gzip compression and tree-shaking further reduced bundle size.
+          <li className="mb-2">
+  Previously received feedback in JavaScript Frameworks to consider using TypeScript—this time I built the entire project with static typing from the start, which significantly improved both code safety and developer experience.
+</li>
+          <li className="mb-2">
+            Add JSDoc comments in codebase to improve developer documentation—will be included as part of post‑grading improvements.
           </li>
-          <li>
-            <strong>New Skill:</strong> Integrated React Context for global cart state management, replacing prop drilling to streamline data flow. Also added a simple simulated payment form using Stripe’s test API to demonstrate secure checkout interactions.
+          <li className="mb-2">
+            Future plans include implementing automated testing, enhancing performance further, and refining <code>TypeScript</code> type safety post‑evaluation.
           </li>
         </ul>
       </section>
-    </article>
+    </main>
   );
 }
-
-export default ProjectThree;
