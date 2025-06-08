@@ -1,17 +1,17 @@
-// src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ProjectOne from './pages/ProjectOne';
 import ProjectTwo from './pages/ProjectTwo';
 import ProjectThree from './pages/ProjectThree';
 import Navbar from './components/Navbar';
-import './App.css';    // any additional styles
-import './index.css';  // your theme variables, etc.
+import Footer from './components/Footer'; // 🔹 legg til denne
+
+import './App.css';
+import './index.css';
 
 function App() {
   return (
     <Router>
-
       <Navbar />
 
       <div style={{ paddingTop: '4rem' }}>
@@ -23,6 +23,7 @@ function App() {
         </Routes>
       </div>
 
+      <Footer /> 
     </Router>
   );
 }
