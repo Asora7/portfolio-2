@@ -20,25 +20,22 @@ This is my second-year portfolio project built as part of the Noroff Frontend De
 
 ## 📁 Project Structure
 
-```
-portfolio-2/
-├── public/
-├── src/
-│   ├── assets/             # All images (project thumbnails, large images, photo)
-│   ├── components/         # Reusable UI components (Navbar, Footer, ProjectCard)
-│   ├── pages/              # Main views: Home and individual project pages
-│   ├── styles/             # Component-specific styles (e.g. ProjectCard.css)
-│   ├── App.jsx             # Main app structure and routing
-│   ├── App.css             # App-level styling
-│   ├── index.css           # Global variables and base styles
-│   └── main.jsx            # React entry point
-├── index.html              # HTML entry file for Vite
-├── package.json            # Project metadata and dependencies
-├── .prettierrc             # Prettier configuration
-├── eslint.config.js        # ESLint rules
-├── README.md               # This file
-└── vite.config.js          # Vite configuration
-```
+- **/public** – Static files like `favicon`, exposed as root
+- **/src**
+  - **/assets** – Project images: thumbnails, large previews, and profile photo
+  - **/components** – Reusable UI components: `Navbar`, `Footer`, `ProjectCard`
+  - **/pages** – Main views: `Home.jsx`, `ProjectOne`, `ProjectTwo`, `ProjectThree`
+  - **/styles** – Component-specific CSS files (e.g. `ProjectCard.css`)
+  - `App.jsx` – Sets up routes and layout
+  - `App.css` – Global layout styles
+  - `index.css` – Variables and base styling
+  - `main.jsx` – Entry point for React DOM rendering
+- **index.html** – Main HTML template used by Vite
+- **package.json** – Project metadata and dependency list
+- **vite.config.js** – Vite configuration
+- **.prettierrc** – Prettier formatting rules
+- **eslint.config.js** – ESLint configuration
+- **README.md** – Project overview and documentation
 
 
 ---
