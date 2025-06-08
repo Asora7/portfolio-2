@@ -101,10 +101,6 @@ npm run dev
 
 ---
 
-## 📦 Dependencies
-
----
-
 ## 🧼 Code Quality
 
 - Prettier formatting with custom settings (e.g. `singleQuote: true`, `trailingComma: es5`)
