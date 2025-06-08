@@ -103,17 +103,6 @@ npm run dev
 
 ## 📦 Dependencies
 
-```json
-{
-  "react": "^19.1.0",
-  "react-dom": "^19.1.0",
-  "react-router-dom": "^7.6.1",
-  "bootstrap": "^5.3.6",
-  "react-icons": "^5.5.0",
-  "prop-types": "^15.8.1"
-}
-```
-
 ---
 
 ## 🧼 Code Quality
