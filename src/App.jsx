@@ -4,7 +4,7 @@ import ProjectOne from './pages/ProjectOne';
 import ProjectTwo from './pages/ProjectTwo';
 import ProjectThree from './pages/ProjectThree';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer'; // 🔹 legg til denne
+import Footer from './components/Footer'; 
 
 import './App.css';
 import './index.css';
