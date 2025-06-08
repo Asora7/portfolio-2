@@ -20,7 +20,6 @@ This is my second-year portfolio project built as part of the Noroff Frontend De
 
 ## 📁 Project Structure
 
-- **/public** – Static files like `favicon`, exposed as root
 - **/src**
   - **/assets** – Project images: thumbnails, large previews, and profile photo
   - **/components** – Reusable UI components: `Navbar`, `Footer`, `ProjectCard`
