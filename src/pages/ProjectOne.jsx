@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { FiShare2 } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import projectImage from '../assets/project1-large.png'; 
+import projectImage from '../assets/project1-large.jpg'; 
 // (Make sure this is your ≤ 200 KB export from Figma/Preview)
 
 export default function ProjectOne() {

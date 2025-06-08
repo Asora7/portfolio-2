@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FiShare2 } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
-import projectImage from '../assets/project3-large.png';
+import projectImage from '../assets/project3-large.jpg';
 
 function ProjectThree() {
   const [copied, setCopied] = useState(false);

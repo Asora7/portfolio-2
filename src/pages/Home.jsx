@@ -2,9 +2,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 
-import thumb1 from '../assets/project1-thumb.png';
-import thumb2 from '../assets/project2-thumb.png';
-import thumb3 from '../assets/project3-thumb.png';
+import thumb1 from '../assets/project1-thumb.jpg';
+import thumb2 from '../assets/project2-thumb.jpg';
+import thumb3 from '../assets/project3-thumb.jpg';
 import myPhoto from '../assets/your-photo.jpg'; 
 
 import {
