@@ -20,11 +20,26 @@ This is my second-year portfolio project built as part of the Noroff Frontend De
 
 ## 📁 Project Structure
 
-- `src/pages` – Contains `Home`, `ProjectOne`, `ProjectTwo`, and `ProjectThree` as full article pages  
-- `src/components` – Reusable components like `Navbar`, `Footer`, and `ProjectCard`
-- `src/assets` – All optimized images used in the UI
-- `index.css` – Contains global styles and design variables
-- `App.jsx` – Handles routing and page layout
+```
+portfolio-2/
+├── public/
+├── src/
+│   ├── assets/             # All images (project thumbnails, large images, photo)
+│   ├── components/         # Reusable UI components (Navbar, Footer, ProjectCard)
+│   ├── pages/              # Main views: Home and individual project pages
+│   ├── styles/             # Component-specific styles (e.g. ProjectCard.css)
+│   ├── App.jsx             # Main app structure and routing
+│   ├── App.css             # App-level styling
+│   ├── index.css           # Global variables and base styles
+│   └── main.jsx            # React entry point
+├── index.html              # HTML entry file for Vite
+├── package.json            # Project metadata and dependencies
+├── .prettierrc             # Prettier configuration
+├── eslint.config.js        # ESLint rules
+├── README.md               # This file
+└── vite.config.js          # Vite configuration
+```
+
 
 ---
 
