@@ -43,7 +43,7 @@ export default function ProjectThree() {
         </button>
       </div>
 
-      <h1 className="text-white mb-3">Exam Project 2</h1>
+      <h1 className="text-white mb-3">Holidaze</h1>
 
       <figure className="mb-4">
         <img

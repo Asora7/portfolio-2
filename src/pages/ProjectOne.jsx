@@ -43,12 +43,12 @@ export default function ProjectOne() {
         </button>
       </div>
 
-      <h1 className="text-white mb-3">JavaScript Frameworks</h1>
+      <h1 className="text-white mb-3">Urban nest</h1>
 
       <figure className="mb-4">
         <img
           src={projectImage}
-          alt="Screenshot of the React-refactored JS Frameworks assignment"
+          alt="Screenshot of the React-refactored Urban nest site"
           className="img-fluid rounded"
           loading="lazy"
         />
@@ -81,7 +81,7 @@ export default function ProjectOne() {
       <section className="mb-5">
         <h2 className="h4 text-white mb-3">Description</h2>
         <p className="text-light">
-          This JavaScript Frameworks assignment is a React-based e-commerce demo. It fetches
+          This Urban Nest site is a React-based e-commerce demo. It fetches
           products from the Noroff API (<code>v2.api.noroff.dev/online-shop</code>), renders them in
           a responsive CSS Grid, and lets users search, view product details, add to cart, and
           complete a checkout flow—all in one SPA.

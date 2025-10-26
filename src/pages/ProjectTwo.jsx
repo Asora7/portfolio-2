@@ -43,7 +43,7 @@ export default function ProjectTwo() {
         </button>
       </div>
 
-      <h1 className="text-white mb-3">Semester Project 2</h1>
+      <h1 className="text-white mb-3">Bidshare</h1>
 
       <figure className="mb-4">
         <img
