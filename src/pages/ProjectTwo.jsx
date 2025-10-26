@@ -100,10 +100,6 @@ export default function ProjectTwo() {
           <li>
             <strong>Unit Testing:</strong> Added Vitest tests for core utility functions.
           </li>
-          <li>
-            <strong>Security Note:</strong> Security improvements (env vars, error handling)
-            deferred post‑submission due to time.
-          </li>
         </ul>
       </section>
     </main>

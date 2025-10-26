@@ -14,6 +14,7 @@ import {
   FaCss3Alt,
   FaGitAlt,
   FaNpm,
+  FaLink,
 } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiFirebase, SiFigma } from 'react-icons/si';
 
@@ -106,7 +107,7 @@ export default function Home() {
               <h2 className="section-title">About Me</h2>
               <p className="about-text">
               With no prior coding experience, I began my journey in front-end development two years ago.
-              Since then, I have built responsive, accessible React applications using JavaScript, TypeScript, Bootstrap 5, and Tailwind.
+              Since then, I have built responsive, accessible React applications using JavaScript, TypeScript, Bootstrap 5, and Tailwind. 
               I take pride in creating modern, user-centered interfaces that combine strong functionality with thoughtful design.
               </p>
             </div>
@@ -148,6 +149,9 @@ export default function Home() {
                 </li>
                 <li>
                   <SiFigma size={20} color="#F24E1E" /> Figma (UI & UX Design)
+                </li>
+                <li>
+                  <FaLink size={18} color="#6CA6CD" /> API Integration (REST, Fetch)
                 </li>
               </ul>
             </div>

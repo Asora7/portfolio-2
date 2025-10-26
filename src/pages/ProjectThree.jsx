@@ -93,9 +93,7 @@ export default function ProjectThree() {
         <ul className="list-unstyled text-light">
           <li>Used React Context for global state, removing prop-drilling.</li>
           <li>Validated accessibility using Lighthouse & WAVE tools.</li>
-          <li>Identified Safari logo issue — fix planned post-evaluation.</li>
-          <li>Fully built in TypeScript to address earlier feedback.</li>
-          <li>Planned JSDoc, testing, and perf improvements after submission.</li>
+          <li>Fully built in TypeScript.</li>
         </ul>
       </section>
     </main>

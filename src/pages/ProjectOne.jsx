@@ -113,10 +113,6 @@ export default function ProjectOne() {
         <h2 className="h4 text-white mb-3">Self-Assessment & Improvements</h2>
         <ul className="list-unstyled text-light">
           <li>
-            <strong>TypeScript Feedback:</strong> Acted on TS feedback by using it in Exam Project
-            2.
-          </li>
-          <li>
             <strong>Documentation:</strong> Added JSDoc comments across components.
           </li>
           <li>
