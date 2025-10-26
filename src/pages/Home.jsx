@@ -15,7 +15,7 @@ import {
   FaGitAlt,
   FaNpm,
 } from 'react-icons/fa';
-import { SiTypescript, SiTailwindcss, SiFirebase } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiFirebase, SiFigma } from 'react-icons/si';
 
 /**
  * Custom hook to check if a referenced element is in view.
@@ -105,11 +105,9 @@ export default function Home() {
             >
               <h2 className="section-title">About Me</h2>
               <p className="about-text">
-                I spent my first two years of front‐end school writing HTML/CSS from scratch, and
-                I’ve been hooked ever since. Today, I build responsive, accessible React
-                applications using JavaScript, TypeScript, Bootstrap 5, and Tailwind. I deploy every
-                project to Netlify, manage code on GitHub, and always strive for pixel‐perfect
-                design plus rock‐solid functionality.
+              With no prior coding experience, I began my journey in front-end development two years ago.
+              Since then, I have built responsive, accessible React applications using JavaScript, TypeScript, Bootstrap 5, and Tailwind.
+              I take pride in creating modern, user-centered interfaces that combine strong functionality with thoughtful design.
               </p>
             </div>
           </div>
@@ -147,6 +145,9 @@ export default function Home() {
                 </li>
                 <li>
                   <FaNpm size={20} color="#CB3837" /> Deployment (Netlify)
+                </li>
+                <li>
+                  <SiFigma size={20} color="#F24E1E" /> Figma (UI & UX Design)
                 </li>
               </ul>
             </div>
