@@ -53,7 +53,7 @@ export default function ProjectOne() {
           loading="lazy"
         />
         <figcaption className="text-light-muted mt-2">
-          Screenshot of the React-refactored JS Frameworks assignment
+          Screenshot of the React-refactored Urban nest site
         </figcaption>
       </figure>
 
