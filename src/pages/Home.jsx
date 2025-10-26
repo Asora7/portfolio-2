@@ -168,7 +168,7 @@ export default function Home() {
           <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
             <div className="col">
               <ProjectCard
-                title="JavaScript Frameworks"
+                title="Urban Nest"
                 description="A React-powered e-commerce demo showcasing product listings, search/filter functionality, and a fully responsive design."
                 imageSrc={thumb1}
                 linkTo="/project-one"
@@ -176,7 +176,7 @@ export default function Home() {
             </div>
             <div className="col">
               <ProjectCard
-                title="Semester Project 2"
+                title="Bidshare"
                 description="A live auction platform built in React where users can browse items, place bids, and track current highest offers in real time."
                 imageSrc={thumb2}
                 linkTo="/project-two"
@@ -184,7 +184,7 @@ export default function Home() {
             </div>
             <div className="col">
               <ProjectCard
-                title="Exam Project 2"
+                title="Holidaze"
                 description="A vacation-rental booking app featuring searchable listings, interactive calendars, and a streamlined reservation flow."
                 imageSrc={thumb3}
                 linkTo="/project-three"
